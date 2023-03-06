@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sky{
+height: 100vh;
+ width: 100%;
+ background-image: url(img/sky.jpg);
+ background-size: cover;
+ background-position: center;
+ position: relative;
+ overflow-x: hidden;
+}
+
+.road{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(img/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 5s linear infinite;
+}
+@keyframes road {
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.volvocar{
+    width: 400px;
+     left: 50%;
+     bottom: 100px;
+     transform: translateX(-50%);
+     position: absolute;
+     z-index: 2;
+}
+.volvocar img {
+     width: 100%;
+     animation: car 1s linear infinite;
+}
+@keyframes car{
+   100%{
+    transform: translateY(100px);
+   }
+   50%{
+    transform: translateY(1px);
+   }
+   0%{
+    transform: translateY(0px);
+   }
+}
+.volvocar1{
+    width: 400px;
+    left: 70%;
+    bottom: -50px;
+    transform: translateY(-50px);
+    position: absolute;
+    z-index: 1;
+}
+.volvocar1  img{
+    width: 100%;
+    animation: car 1s linear infinite;
+
+}
+.whell{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    animation: whell 1s linear infinite;
+}
+.whell img {
+    width: 45px;
+    height: 45px;
+
+}
+.img-whell{
+    left: -150px;
+    bottom: -19px;
+    position: absolute;
+}
+
+.img-whell1{
+    left: 100px;
+    bottom: -23px;
+    position: absolute;
+}
+
+@keyframes whell{
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
